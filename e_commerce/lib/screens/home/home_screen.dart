@@ -15,16 +15,21 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(vertical: 40),
+          padding: EdgeInsets.symmetric(vertical: 50),
           child: Column(
             children: [
-              HomeHeader(),
-              DiscountBanner(),
-              Categories(),
-              SpecialOffers(),
+              HomeHeader(),//home_header.dart search_field.dart
               SizedBox(height: 20),
-              PopularProducts(),
-              SizedBox(height: 20),
+              DiscountBanner(),//discountbanner.dart and
+              
+              
+               Categories(),// only categories.dart required
+             
+               SpecialOffers(),// special_offers->products_screen->section_title.dart
+             // SizedBox(height: 200),
+             // SizedBox(height: 50),
+              //  PopularProducts(),
+              //SizedBox(height: 90),
             ],
           ),
         ),

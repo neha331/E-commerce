@@ -7,7 +7,7 @@ import 'components/color_dots.dart';
 import 'components/product_description.dart';
 import 'components/product_images.dart';
 import 'components/top_rounded_container.dart';
-
+//after selecting product
 class DetailsScreen extends StatelessWidget {
   static String routeName = "/details";
 
@@ -85,14 +85,14 @@ class DetailsScreen extends StatelessWidget {
                   product: product,
                   pressOnSeeMore: () {},
                 ),
-                TopRoundedContainer(
-                  color: const Color(0xFFF6F7F9),
-                  child: Column(
-                    children: [
-                      ColorDots(product: product),
-                    ],
-                  ),
-                ),
+                // TopRoundedContainer( //changed
+                //   color: const Color(0xFFF6F7F9),
+                //   child: Column(
+                //     children: [
+                //       ColorDots(product: product),
+                //     ],
+                //   ),
+                // ),
               ],
             ),
           ),

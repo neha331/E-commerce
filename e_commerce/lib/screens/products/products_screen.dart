@@ -3,7 +3,7 @@ import 'package:shop_app/components/product_card.dart';
 import 'package:shop_app/models/Product.dart';
 
 import '../details/details_screen.dart';
-
+//call to product_card.dart
 class ProductsScreen extends StatelessWidget {
   const ProductsScreen({super.key});
 
@@ -15,9 +15,9 @@ class ProductsScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Products"),
       ),
-      body: SafeArea(
+      body: SafeArea( // added contant keyword
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 20),// removed const
           child: GridView.builder(
             itemCount: demoProducts.length,
             gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
@@ -31,12 +31,12 @@ class ProductsScreen extends StatelessWidget {
               onPress: () => Navigator.pushNamed(
                 context,
                 DetailsScreen.routeName,
-                arguments:
+                 arguments:
                     ProductDetailsArguments(product: demoProducts[index]),
               ),
             ),
           ),
-        ),
+         ),
       ),
     );
   }

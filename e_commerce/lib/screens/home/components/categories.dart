@@ -8,9 +8,9 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categories = [
       {"icon": "assets/icons/Flash Icon.svg", "text": "Flash Deal"},
-      {"icon": "assets/icons/Bill Icon.svg", "text": "Bill"},
-      {"icon": "assets/icons/Game Icon.svg", "text": "Game"},
-      {"icon": "assets/icons/Gift Icon.svg", "text": "Daily Gift"},
+      {"icon": "assets/icons/Bill Icon.svg", "text": "groceries"},
+      {"icon": "assets/icons/Game Icon.svg", "text": "cloths"},
+      {"icon": "assets/icons/Gift Icon.svg", "text": "Foot wear"},
       {"icon": "assets/icons/Discover.svg", "text": "More"},
     ];
     return Padding(
@@ -50,7 +50,7 @@ class CategoryCard extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(16),
-            height: 56,
+            height: 60,
             width: 56,
             decoration: BoxDecoration(
               color: const Color(0xFFFFECDF),
