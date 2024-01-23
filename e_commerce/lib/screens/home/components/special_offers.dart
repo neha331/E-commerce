@@ -25,7 +25,7 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 image: "assets/images/Image Banner 2.png",
-                category: "Smartphone",
+                category: "Electronics",
                 numOfBrands: 18,
                 press: () {
                   Navigator.pushNamed(context, ProductsScreen.routeName);
